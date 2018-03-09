@@ -60,7 +60,22 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+         
+         
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>ext-releases</name>
+        <url>http://192.168.122.11:8081/artifactory/MAVEN</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ext-snapshots</name>
+        <url>http://192.168.122.11:8081/artifactory/MAVEN</url>
+    </snapshotRepository>
+</distributionManagement>
+         
+         
     <build>
         <finalName>booking-app</finalName>
         <plugins>
